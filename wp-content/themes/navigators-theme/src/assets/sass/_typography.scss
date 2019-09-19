@@ -1,0 +1,63 @@
+// font-family: 'Eina03';
+@font-face {
+    font-family: 'Eina03';
+    font-weight: normal;
+    src:  local('Eina03'), local('Eina03-Regular');
+    src:  url('~@fonts/Eina_03/regular/Eina03-Regular.eot');
+    src:  url('~@fonts/Eina_03/regular/Eina03-Regular.eot?#iefix') format('embedded-opentype'),
+        url('~@fonts/Eina_03/regular/Eina03-Regular.woff') format('woff'),
+        url('~@fonts/Eina_03/regular/Eina03-Regular.ttf') format('truetype'),
+        url('~@fonts/Eina_03/regular/Eina03-Regular.svg#Eina03-Regular') format('svg');
+}
+
+// font-weight: 500;
+@font-face {
+    font-family: 'Eina03';
+    font-weight: 600;
+    src:  local('Eina03'), local('Eina03-SemiBold');
+    src:  url('~@fonts/Eina_03/semibold/Eina03-SemiBold.eot');
+    src:  url('~@fonts/Eina_03/semibold/Eina03-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('~@fonts/Eina_03/semibold/Eina03-SemiBold.woff') format('woff'),
+        url('~@fonts/Eina_03/semibold/Eina03-SemiBold.ttf') format('truetype'),
+        url('~@fonts/Eina_03/semibold/Eina03-SemiBold.svg#Eina03-SemiBold') format('svg');
+}
+
+// font-weight: 700;
+@font-face {
+    font-family: 'Eina03';
+    font-weight: 700;
+    src:  local('Eina03'), local('Eina03-Bold');
+    src:  url('~@fonts/Eina_03/bold/Eina03-Bold.eot');
+    src:  url('~@fonts/Eina_03/bold/Eina03-Bold.eot?#iefix') format('embedded-opentype'),
+        url('~@fonts/Eina_03/bold/Eina03-Bold.woff') format('woff'),
+        url('~@fonts/Eina_03/bold/Eina03-Bold.ttf') format('truetype'),
+        url('~@fonts/Eina_03/bold/Eina03-Bold.svg#Eina03-SemiBold') format('svg');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $fontFamily;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}

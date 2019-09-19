@@ -1,0 +1,139 @@
+.investor-page {
+    padding-bottom: 140px;
+
+    @include max-w(960px) {
+        padding-bottom: 50px;
+    }
+
+    @include max-w(620px) {
+        padding-bottom: 20px;
+    }
+}
+
+.investor-wrapper {
+    width: 100%;
+    position: relative;
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $theme3;
+        width: 68%;
+        height: 100%;
+    }
+}
+
+.investor-contant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: $white;
+    position: relative;
+    &:after {
+        content: ' ';
+        display: block;
+        background-color: $white;
+        height: 1px;
+        width: 100%;
+        position: relative;
+        z-index: 999;
+        top: -1px;
+    }
+}
+
+.section-info.investor-info {
+    &:before {
+        width: 67%;
+    }
+}
+.investor-col {
+    max-width: 33.333%;
+    margin: 0 auto;
+    width: 100%;
+    padding: 40px;
+    outline: none;
+
+    @include max-w(960px) {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    &:hover, &:active, &:focus {
+        outline: none;
+    }
+
+    &__inner {
+        padding-right: 25px;
+    }
+    h3 {
+        font-size: 22px;
+        font-weight: 600;
+        color: $theme;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 2;
+        letter-spacing: 1.04px;
+        color: $pBlack;
+        margin-bottom: 0;
+        padding-bottom: 15px;
+    }
+    &:nth-child(1n) {
+        border-top: none;
+        border-left: none;
+        border-bottom: 1px solid $lGray;
+        border-right: 1px solid $lGray;
+    }
+    &:nth-child(2n) {
+        border-top: none;
+        border-left: none;
+        border-bottom: 1px solid $lGray;
+        border-right: 1px solid $lGray;
+    }
+    &:nth-child(3n) {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid $lGray;
+    }
+}
+
+.no-bg {
+    &:before {
+        display: none;
+    }
+}
+
+.page-template-template-startup {
+    .section-info {
+        @include max-w(992px) {
+            padding: 80px 0 30px;
+        }
+
+        @include max-w(768px) {
+            padding: 40px 0 30px;
+        }
+    }
+}
+
+.investor-contant__large {
+    @include max-w(960px) {
+        display: none;
+    }
+}
+
+.investor-slider {
+    width: 100%;
+    display: none;
+    margin-bottom: 50px;
+
+    @include max-w(960px) {
+        display: block;
+    }
+}

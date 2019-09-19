@@ -1,0 +1,54 @@
+.small-container-404 {
+    padding: 100px 25px;
+
+    .page-title {
+        color: $theme;
+    }
+}
+
+.page-title {
+    @include max-w(620px) {
+        font-size: 32px;
+    }
+}
+
+.slick-dots-container {
+    width: 5.5rem;
+    overflow: hidden;
+    display: block;
+    padding: 0;
+    margin: .625rem auto;
+    height: .875rem;
+    position: relative;
+}
+
+.slick-dots-container > ul {
+    padding: 0;
+    display: flex;
+    transition: all .25s;
+    position: relative;
+    margin: 0;
+    list-style: none;
+    transform: translateX(0);
+    align-items: center;
+    bottom: unset;
+    height: 100%;
+}
+
+.slick-dots-container > ul li {
+    width: 7px;
+    height: 7px;
+    margin: 0 .25rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+}
+
+.slick-dots-container > ul li.slick-active {
+    transform-origin: center;
+    background: transparent;
+}
+
+.slick-dots li button:before {
+    display: none;
+}
